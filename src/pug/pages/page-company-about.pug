@@ -35,12 +35,42 @@ block content
         svgBorderFill: 'text-white'
     })
 
-        .page-header-content.pt-10
-            .container.text-center
-                .row.justify-content-center
-                    .col-lg-8
-                        h1.page-header-title.mb-3 About our company
-                        p.page-header-text Our company culture, and how we do things
+        .page-header-content.mb-n5
+            .container
+                .row.justify-content-center.align-items-center
+                    .col-lg-6(data-aos='fade-right')
+                        h1.page-header-title Pub. Bar. Restaurant. <br> Time Machine.
+                        p.page-header-text.mb-5 Venues powered by Queue Pay receive more orders and see shorter wait times than venues without it*. With the simplest and fastest virtual waiter ready to go at each table, there's no better way to get ahead of the game. It's like turning a tavern into a TARDIS, just less of a headache.
+                      
+                    .col-lg-6.z-1(data-aos='fade-left')
+                        img(src='../../assets/img/StitchFix.png').img-fluid.z-1
+
+
+    //- * * * * * * * * *
+    //- * * Portfolio * *
+    //- * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: '',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container
+            .row
+                .col-md-6.col-xl-4.mb-5.mt-n5
+                    a.card.card-portfolio.h-100(href='#!')
+                        img.card-img-top(src='../../assets/img/QueueIAS1.jpg', alt='QueueIAS1')
+                .col-md-6.col-xl-4.mb-5.mt-md-n5
+                    a.card.card-portfolio.h-100(href='#!')
+                        img.card-img-top(src='../../assets/img/QueueIAS2.jpg', alt='QueueIAS2')
+                .col-md-6.col-xl-4.mb-5.mt-xl-n5
+                    a.card.card-portfolio.h-100(href='#!')
+                        img.card-img-top(src='../../assets/img/QueueIAS3.jpg', alt='QueueIAS3')
 
     //- * * * * * * * * * * *
     //- * * Text Section  * *
@@ -49,7 +79,7 @@ block content
     include mixins/section.pug
     +section({
         sectionBg: 'bg-white',
-        sectionPadding: 'py-10',
+        sectionPadding: 'py-100',
         svgBorderAngled: false,
         svgBorderRounded: true,
         svgBorderWaves: false,
@@ -59,51 +89,39 @@ block content
         .container
             .row.justify-content-center
                 .col-lg-10
+                    h2(style="text-align: center;").mb-4 Ordering done ordinary. Minimal frills, maximum ease.
 
-                    h2.mb-4 A quick guide to our company culture
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eos quisquam expedita quo officiis porro provident laborum. Earum, consequatur provident, ipsam at excepturi rerum laborum aliquam facere molestias mollitia recusandae.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam? Perspiciatis sunt voluptatum officia non harum, dolores omnis fugiat nam ad optio cumque molestiae impedit dignissimos velit commodi aliquid iure?
-                    p.mb-0 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sapiente natus architecto aut porro! Vitae iusto praesentium recusandae debitis, cumque illum amet suscipit rem pariatur, magni iure laborum inventore in!
+                    h4.mb-4
+                        .icon-stack.bg-primary.text-white.mr-2
+                            i(data-feather='arrow-right')
+                        | How do you place an order?
+                    p Once your system is set-up and you've positioned your unique QR Codes or NFC Chips along your bar/on all your tables (nowhere near as complex as it might sound), your menu is ready to be accessed. Your customers can then scan one of your QR Codes or tap one of your NFC Chips with their phone, and in the space of seconds, they'll be on your menu. From there, they'll be able to see all your items and add what they want to their virtual basket; similarly to online shopping. When they're ready to pay, they can navigate to their basket, enter their details, and pay with their preferred payment method. The rest it down to you!
+
+                    .card.bg-light.shadow-none
+                        .card-body
+                            h6 What's a QR Code/NFC Chip?
+                            ul.mb-0
+                                li.text-italic A QR Code is a barcode that holds all sorts of information, or in this instance, the web address for your online menu. The majority of phones today can scan them with their built-in camera app and many people are already familiar with them/how to use them. An NFC Chip is similar to a QR Code in the way that it holds information, but instead of needing to be scanned by a camera, you can tap a modern phone against it so it can receive a no-battery-needed wireless message, like the web address for your online menu.
 
                     hr.my-5
 
                     h4.mb-4
                         .icon-stack.bg-primary.text-white.mr-2
                             i(data-feather='arrow-right')
-                        | This is what we do
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eos quisquam expedita quo officiis porro provident laborum. Earum, consequatur provident, ipsam at excepturi rerum laborum aliquam facere molestias mollitia recusandae.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam? Perspiciatis sunt voluptatum officia non harum, dolores omnis fugiat nam ad optio cumque molestiae impedit dignissimos velit commodi aliquid iure?
-                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sapiente natus architecto aut porro! Vitae iusto praesentium recusandae debitis, cumque illum amet suscipit rem pariatur, magni iure laborum inventore in!
+                        | How do I receive my orders?
+                    p All your orders - past and present - can be seen in the Orders section of our online platform; the same one you use to customise and make changes to your menu and Queue Pay account when you get set-up. Just log-in through the Queue Pay website and you'll find it on the Navigation Menu. Once you're there, you can see all the information you need to fulfil your orders including tables numbers, names and of course the items your customers have ordered. The platform is currently viewable on laptops and tablets only.
 
                     .card.bg-light.shadow-none
                         .card-body
-                            h6 Questions you should ask yourself
+                            h6 Expanding the Network
                             ul.mb-0
-                                li.text-italic Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta fugiat eveniet, dignissimos facere quisquam, odit suscipit aliquid magnam,?
+                                li.text-italic We recommend that larger venues with lots of staff position multiple devices running the Queue Pay Platform around the venue in the places most convenient, just to ensure everyone is kept up to speed.
 
                     hr.my-5
 
-                    h4.mb-4
-                        .icon-stack.bg-primary.text-white.mr-2
-                            i(data-feather='arrow-right')
-                        | Move with urgency and focus
-                    p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem suscipit veniam excepturi soluta ducimus tempora quasi, itaque odit libero, eos in dolore natus, ipsam consectetur voluptate nulla provident aliquam?
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam consequuntur iusto vero consequatur beatae, tempore voluptatem rerum sit facilis aut ea optio eaque quaerat, libero recusandae soluta molestiae veniam.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ut! Ut ipsum debitis numquam. Perferendis, laudantium! Itaque ab velit eaque magnam quis quam libero saepe nobis culpa. Vitae, dignissimos iusto.
-
-                    .card.bg-light.shadow-none
-                        .card-body
-                            h6 Questions you should ask yourself
-                            ul.mb-0
-                                li.text-italic Lorem ipsum dolor sit amet, consectetur adipisicing elit?
-                                li.text-italic Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nobis illum nam?
-
-                    hr.my-5
-
-                    h4 Feedback
+                    h4 Any Questions?
                     p.lead.
-                        In the spirit of thinking rigorously, we’d love your open and honest feedback on this guide. <a href='#!'>Let us know what you think</a>.
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum culpa optio nihil id distinctio excepturi dignissimos, iure totam minima, natus ducimus.
+                        If there's anything you'd like to know or you'd like to find out if Queue Pay would work for you, <a href='#!'>just give us a call or send us a message.</a> We're here to help!
 
 block footer
 
