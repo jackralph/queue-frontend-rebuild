@@ -82,47 +82,6 @@ block content
                     p.mb-0
                         | Whether it be the start of the end of the evening, customers find Queue Pay consistently foolproof - no matter how young, old, or deep into the rounds they may be. All it takes is a scan or a tap.
 
-    hr
-
-    //- * * * * * * * * * * *
-    //- * * Testimonials  * *
-    //- * * * * * * * * * * *
-
-    include mixins/section.pug
-    +section({
-        sectionBg: 'bg-white',
-        sectionPadding: 'py-10',
-        svgBorderAngled: false,
-        svgBorderRounded: false,
-        svgBorderWaves: false,
-        svgBorderFill: ''
-    })
-
-        .container
-
-            .row
-
-                .col-lg-6.mb-5.mb-lg-0.divider-right(data-aos='fade')
-                    .testimonial.p-lg-5
-                        .testimonial-brand.text-gray-400
-                            include /assets/img/brand-logos/google.svg
-                        p.testimonial-quote.text-primary
-                            | "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut error vel omnis adipisci. Ad nam officiis sapiente dicta incidunt harum."
-                        .testimonial-name
-                            | Adam Hall
-                        .testimonial-position
-                            | Head of Engineering
-                .col-lg-6(data-aos='fade', data-aos-delay='100')
-                    .testimonial.p-lg-5
-                        .testimonial-brand.text-gray-400
-                            include /assets/img/brand-logos/instagram.svg
-                        p.testimonial-quote.text-primary
-                            | "Adipisci mollitia nemo magnam iure, temporibus molestiae odit, sit harum dolores neque maiores quo eligendi nam corrupti."
-                        .testimonial-name
-                            | Lia Peterson
-                        .testimonial-position
-                            | Technical Project Manager
-
     //- * * * * * * * * * * *
     //- * * Feature Cards * *
     //- * * * * * * * * * * *
