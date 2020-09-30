@@ -24,12 +24,13 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-blue',
+        pageHeaderBg: 'bg-img-cover',
+        pageHeaderBgImg: 'background-image: url("../../assets/img/header-bg.gif");',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
         svgBorderWaves: false,
-        svgBorderFill: 'text-light'
+        svgBorderFill: 'text-white'
     })
 
         .page-header-content
