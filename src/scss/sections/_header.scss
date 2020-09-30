@@ -34,7 +34,7 @@
     color: $white;
   }
   .page-header-text {
-    @extend .text-white-50;
+    color: $white;
     a {
       @extend .text-white-75;
     }
