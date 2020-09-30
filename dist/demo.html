@@ -8,6 +8,7 @@
         <meta name="author" content="" />
         <title>Demo - SB Admin Pro</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
@@ -18,7 +19,7 @@
                 <main>
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
                         <div class="container">
-                            <a class="navbar-brand text-primary" href="index.html"><img src="../../../assets/img/queue-fin-03.png" alt="queue pay logo"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu" style="color: white;"></i></button>
+                            <a class="navbar-brand text-primary" href="/"><img src="../../../assets/img/queue-fin-03.png" alt="queue pay logo"/></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu" style="color: white;"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto mr-lg-5">
                                     <li class="nav-item"><a class="nav-link" href="demo.html" style="color: white">Try the Demo </a></li>
@@ -159,5 +160,13 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true
+            });
+        </script>
     </body>
 </html>

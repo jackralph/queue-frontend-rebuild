@@ -5,6 +5,9 @@ block config
     //- Global Page Configuration
     - var pageTitle = 'Demo'
 
+append css
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
 block content
 
     //- * * * * * * * *
@@ -128,3 +131,12 @@ block footer
         footerBg: 'bg-dark',
         footerStyle: 'footer-dark'
     })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
