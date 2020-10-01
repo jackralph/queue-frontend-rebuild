@@ -124,6 +124,17 @@ block content
                     p(style="padding-bottom: 50px;").lead.
                         If there's anything you'd like to know or you'd like to find out if Queue Pay would work for you, <a href='#!'>just give us a call or send us a message.</a> We're here to help!
 
+    //- * * * * * * * * * * * *
+    //- * * Floating Footer * *
+    //- * * * * * * * * * * * *
+
+    include mixins/floating-footer.pug
+    +floating-footer({
+        pageHeaderBg: 'bg-img-cover',
+        pageHeaderBgImg: 'background-image: url("../../assets/img/header-bg.gif");',
+        pageHeaderStyle: 'page-header-dark',
+    })
+
 block footer
 
     include mixins/footer.pug
