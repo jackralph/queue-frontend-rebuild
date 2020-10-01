@@ -169,6 +169,17 @@ block content
                     button(style="color: white; border: none;").btn-lg.bg-dark
                         | Join Today
 
+    //- * * * * * * * * * * * *
+    //- * * Floating Footer * *
+    //- * * * * * * * * * * * *
+
+    include mixins/floating-footer.pug
+    +floating-footer({
+        pageHeaderBg: 'bg-img-cover',
+        pageHeaderBgImg: 'background-image: url("../../assets/img/header-bg.gif");',
+        pageHeaderStyle: 'page-header-dark',
+    })
+
 block footer
 
     include mixins/footer.pug
