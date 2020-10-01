@@ -5,6 +5,27 @@ mixin footer(options)
         if block
             block
         else
+            .container.form-footer
+                .row
+                    form
+                .form-row
+                    .form-group.col-md-6
+                        label.text-dark(for='inputName') Full name
+                        input#inputName.form-control.py-4(type='text', placeholder='Full name')
+                    .form-group.col-md-6
+                        label.text-dark(for='inputEmail') Address
+                        input#inputEmail.form-control.py-4(type='text', placeholder='Address')
+                    .form-group.col-md-6
+                        label.text-dark(for='inputEmail') Postcode
+                        input#inputEmail.form-control.py-4(type='text', placeholder='Postcode')
+                    .form-group.col-md-6
+                        label.text-dark(for='inputEmail') Contact Number
+                        input#inputEmail.form-control.py-4(type='email', placeholder='E-Mail')
+                .text-center
+                    button.btn.rounded-pill.btn-marketing.mt-4(type='submit') Submit Request
+            
+                hr.my-5
+
             .container
                 .row
                     .col-lg-3

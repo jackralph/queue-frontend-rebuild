@@ -8,21 +8,10 @@ mixin floating-footer(options)
             .floating-footer-container
                     .floating-footer-button
                         .row.justify-content-center
-                            button.btn-outline-light.btn.btn-sm.rounded-pill.px-4.ml-1                                
-                                i.fas.fa-arrow-up.ml-1
-                                |  Receive an Info Pack
+                            a(href="#layoutDefault_footer").btn-outline-light.btn.btn-sm.rounded-pill.px-4.ml-1
+                                | Receive an Info Pack
                                 br
                                 strong Free of Charge
-                    .floating-footer-content
-                        .row.justify-content-center
-                            form
-                                input.form-control.form-control-sm.rounded-input(type='text', name='info', placeholder='Full Name', required='')
-                                input.form-control.form-control-sm.rounded-input(type='text', name='info', placeholder='Address', required='')
-                                input.form-control.form-control-sm.rounded-input(type='text', name='info', placeholder='Postcode', required='')
-                                input.form-control.form-control-sm.rounded-input(type='text', name='info', placeholder='Contact Number', required='')
-                                button.btn-outline-light.btn.btn-sm.rounded-pill.px-4.ml-1                                
-                                    | Submit
-                                    i.fas.fa-arrow-right.ml-1
                             
                             
 
